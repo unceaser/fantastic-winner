@@ -7,6 +7,12 @@ verify_ssl = true
 
 [packages]
 django = "*"
+requsts = "*"
+requests = "==2.22.0"
 
 [requires]
 python_version = "3.7"
+
+[scripts]
+server = "python manage.py runserver"
+smonitoring = "python monitoring.py"
