@@ -19,5 +19,8 @@
 
        ``` 
       pytest tests/tests.py > results.txt
-      python app.py >> results.txt
+      python3 app.py >> results.txt
       ```
+11. Зробив коміт із змінами до репозиторію.
+12. Заповнив Makefile необхідними командами (bash) для повної автоматизації процесу СІ свого проекту.
+13. 
