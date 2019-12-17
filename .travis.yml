@@ -9,14 +9,14 @@ jobs:
       name: "Run tests for Lab 2"
       python: 3.7
       install:
-        - cd ./lab2/
+        - cd ./lab_2/
         - pipenv install
       script: pipenv run pytest tests/tests.py || true
     - stage: "Build Lab 3."
       name: "Run Djungo Server and test it accessibility. Fail to run and test"
       python: 3.7
       install:
-        - cd ./lab3/
+        - cd ./lab_3/
         - pipenv install
       script: ./scripts/travis-build.sh
     - stage: "Build Lab 4."
@@ -24,7 +24,7 @@ jobs:
       services:
         - docker
       install:
-        - cd ./lab4/
+        - cd ./lab_4/
       script:
         - docker build -t leobestiarium/lab_6:django-travis .
         - docker images
@@ -34,7 +34,7 @@ jobs:
       services:
         - docker
       install:
-        - cd ./lab5/
+        - cd ./lab_5/
         - make app
         - make tests
       script:
