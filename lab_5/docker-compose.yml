@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.app
-    image: bobas/lab4-examples:compose-app
+    image: leobestiarium/lab_5:compose-app
     container_name: app
     depends_on:
       - redis
@@ -19,7 +19,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.tests
-    image: bobas/lab4-examples:compose-tests
+    image: leobestiarium/lab_5:compose-tests
     container_name: tests
     depends_on:
       - hits
