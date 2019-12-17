@@ -1,0 +1,30 @@
+version: '3.3'
+services:
+  django:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: leobestiarium/lab_4:django
+    container_name: django
+    networks:
+      - public
+    ports:
+      - 8000:8000
+  monitoring:
+    build:
+      context: .
+      dockerfile: Dockerfile.monitoring
+    image: leobestiarium/lab_4:monitoring
+    container_name: monitoring
+    depends_on:
+      - django
+    networks:
+      - bridge
+    volumes:
+      - ./app/server.log:/root
+
+networks:
+  public:
+    driver: bridge
+  bridge:
+    driver: bridge
