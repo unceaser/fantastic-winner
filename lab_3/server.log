@@ -1,23 +1,16 @@
-INFO 2019-10-23 18:51:29,734 root : Сервер доступний. Час на сервері: 2019-10-23T18:51:29.733
-INFO 2019-10-23 18:51:29,734 root : Запитувана сторінка: : /health/
-INFO 2019-10-23 18:51:29,734 root : Відповідь сервера місти наступні поля:
-INFO 2019-10-23 18:51:29,734 root : Ключ: date, Значення: 2019-10-23T18:51:29.733
-INFO 2019-10-23 18:51:29,734 root : Ключ: current_page, Значення: /health/
-INFO 2019-10-23 18:51:29,734 root : Ключ: server_info, Значення: {'System': 'Linux', 'Hostname': 'archlinux', 'Arch': 'x86_64', 'Vetsion': '#1 SMP PREEMPT Fri Oct 18 00:17:03 UTC 2019'}
-INFO 2019-10-23 18:51:29,734 root : Ключ: client_info, Значення: python-requests/2.22.0
-INFO 2019-10-23 19:08:37,308 root : Сервер доступний. Час на сервері: 2019-10-23T19:08:37.307
-INFO 2019-10-23 19:08:37,308 root : Запитувана сторінка: : /health/
-INFO 2019-10-23 19:08:37,308 root : Відповідь сервера місти наступні поля:
-INFO 2019-10-23 19:08:37,308 root : Ключ: date, Значення: 2019-10-23T19:08:37.307
-INFO 2019-10-23 19:08:37,308 root : Ключ: current_page, Значення: /health/
-INFO 2019-10-23 19:08:37,308 root : Ключ: server_info, Значення: {'System': 'Linux', 'Hostname': 'archlinux', 'Arch': 'x86_64', 'Vetsion': '#1 SMP PREEMPT Fri Oct 18 00:17:03 UTC 2019'}
-INFO 2019-10-23 19:08:37,308 root : Ключ: client_info, Значення: python-requests/2.22.0
-ERROR 2019-10-23 19:09:55,375 root : Не під'єднано до сервера
-WARNING 2019-10-23 19:09:55,375 root : Не під'єднано до сервера
-INFO 2019-10-23 19:10:08,265 root : Сервер доступний. Час на сервері: 2019-10-23T19:10:08.264
-INFO 2019-10-23 19:10:08,265 root : Запитувана сторінка: : /health/
-INFO 2019-10-23 19:10:08,265 root : Відповідь сервера місти наступні поля:
-INFO 2019-10-23 19:10:08,265 root : Ключ: date, Значення: 2019-10-23T19:10:08.264
-INFO 2019-10-23 19:10:08,265 root : Ключ: current_page, Значення: /health/
-INFO 2019-10-23 19:10:08,265 root : Ключ: server_info, Значення: {'System': 'Linux', 'Hostname': 'archlinux', 'Arch': 'x86_64', 'Vetsion': '#1 SMP PREEMPT Fri Oct 18 00:17:03 UTC 2019'}
-INFO 2019-10-23 19:10:08,265 root : Ключ: client_info, Значення: python-requests/2.22.0
+WARNING 2019-12-05 23:56:50,666 root : 
+Server в роботі :)
+
+INFO 2019-12-05 23:56:50,666 root : Сервер доступний. Час на сервері: 2019-12-05 21:56-50
+INFO 2019-12-05 23:56:50,666 root : Запитувана сторінка: : /health/
+INFO 2019-12-05 23:56:50,666 root : Відповідь сервера місти наступні поля:
+INFO 2019-12-05 23:56:50,666 root : Ключ: date, Значення: 2019-12-05 21:56-50
+INFO 2019-12-05 23:56:50,666 root : Ключ: current_page, Значення: /health/
+INFO 2019-12-05 23:56:50,666 root : Ключ: server_info, Значення: ['Linux', 'kramsayu-VirtualBox', '5.0.0-23-generic', '#24~18.04.1-Ubuntu SMP Mon Jul 29 16:12:28 UTC 2019', 'x86_64']
+INFO 2019-12-05 23:56:50,666 root : Ключ: client_info, Значення: python-requests/2.22.0
+ERROR 2019-12-05 23:57:03,108 root : 
+Виникла наступна помилка: 
+ HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f4537552f60>: Failed to establish a new connection: [Errno 111] Connection refused'))
+ERROR 2019-12-05 23:58:02,844 root : 
+Виникла наступна помилка: 
+ HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /health (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9168088048>: Failed to establish a new connection: [Errno 111] Connection refused'))

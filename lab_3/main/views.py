@@ -3,22 +3,18 @@ from django.http import JsonResponse
 import os
 from datetime import datetime
 
-sinfo = os.uname()
 
 def main(request):
-    return render(request, 'main.html', {'parameter': "test"})
+    return render(request, 'main.html', {'parameter': "kramsayu"})
 
 
 def health(request):
+    dt = datetime.now()
     response = {
-            'date': datetime.now(),
+            'date': dt.strftime("%Y-%m-%d %H:%M-%S"),
             'current_page': request.path,
-            'server_info': {
-                'System': sinfo.sysname,
-                'Hostname': sinfo.nodename,
-                'Arch': sinfo.machine,
-                'Vetsion':  sinfo.version
-            },
+            'server_info': os.uname(), 
             'client_info': request.META['HTTP_USER_AGENT']
     }
     return JsonResponse(response)
+
