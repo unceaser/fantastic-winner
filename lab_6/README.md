@@ -10,5 +10,5 @@
     - переписав білд _lab 2;
     - переписав білд _lab 4;;
     - переписав білд _lab 5;
-    - вкажіть посилання на Ваш Travis білд у README.md;
+    - вкажіть посилання на Ваш [Travis](https://travis-ci.com/lionengine/fantastic-winner) білд у README.md;
 6. (:heavy_check_mark:) Після успішного виконання роботи відредагуйте Ваш персональний _README.md_ у цьому репозиторію та створіть pull request.
